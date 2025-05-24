@@ -1,5 +1,5 @@
 # Usa imagem leve do Python
-FROM python:3.10-slim
+FROM python:3.10-slim-bullseye
 
 # Define o diretório de trabalho no container
 WORKDIR /app
@@ -16,5 +16,5 @@ COPY . .
 # Expõe a porta usada pelo Cloud Run
 EXPOSE 8080
 
-# Comando que inicia o servidor FastAPI via uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Comando que inicia o servidor FastAPI via uvicorn (porta dinâmica)
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080}"]

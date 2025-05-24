@@ -1,0 +1,33 @@
+# Ignore virtual environments
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Ignore Git
+.git/
+.gitignore
+
+# Ignore editor configs e logs
+*.log
+*.swp
+.DS_Store
+.vscode/
+
+# Ignore arquivos de build
+*.egg-info/
+dist/
+build/
+node_modules/
+
+# Ignore dados do usuário
+*.sqlite3
+*.json
+*.csv
+
+# Ignore imagens e dados locais
+*.jpg
+*.png
+*.zip
+*.tar
+*.tgz
