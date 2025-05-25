@@ -1,5 +1,0 @@
-uvicorn main:app --reload
-
-#storage bucket
-gs://dermasync-llm-bucket-name/
-gs://dermasync-llm-bucket-name/depoimentos_extraidos.jsonl
