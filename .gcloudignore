@@ -31,3 +31,7 @@ node_modules/
 *.zip
 *.tar
 *.tgz
+
+# Ignore secrets and configuration files
+*.env
+info_dev.txt
